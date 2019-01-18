@@ -1,0 +1,172 @@
+html { 
+	
+-webkit-text-size-adjust: 100%; 
+background-color: #373737;
+box-sizing: border-box;
+min-width: 215px;
+-webkit-tap-highlight-color: transparent;
+-webkit-user-select: none;
+-moz-user-select: none;
+user-select: none;
+	
+  }  
+
+*, *:before, *:after {
+	
+	box-sizing: inherit; 
+	
+	 }
+
+
+* {
+	margin: 0; 
+	padding: 0;
+} 
+
+body { 
+	
+margin: 0 auto 8% auto; 
+padding: 0 3% 0 4%;
+max-width: 560px;
+font-family: 'Tajawal', sans-serif;
+		
+}
+
+section, article, nav, aside, header, footer, main { 
+	
+	display: block;  
+}
+
+#header__container {   
+	  
+	font-weight: normal;
+	overflow: hidden;
+    height: 250px;	
+
+}
+
+
+#trackArtImgTag {
+
+width: 100%;
+
+
+}
+
+#trackTitle {
+	
+	text-align: center;
+	color: white;
+	background-color: rgb(95, 52, 52);
+	background-color: rgba(95,52,52, 0.90);
+	padding-top: 15px;
+	letter-spacing: 2px;
+	font-weight: normal;
+	font-size: 1.25rem;
+}
+
+@supports (display: grid) {
+	
+	#header__container {
+			
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+		/*for media query use height: 100px; */
+	
+	}
+	
+	#trackArtImgTag {
+
+	grid-row: 1 / -1;
+	grid-column: 1 / -1;
+	
+
+}
+	
+	#trackTitle {
+		
+		z-index: 2;
+		grid-row: 3;
+		grid-column:1 / -1;
+	
+	}
+	
+	
+} /*end of supports*/
+
+@media screen and (max-width: 400px) {
+	#header__container {
+		height: 150px;
+		
+	}
+	
+	#trackTitle {
+		
+		padding-bottom: 5px;
+	}
+	
+} /*end of media query*/
+
+
+
+#button__container {
+	
+	width: 100%;
+	padding: 5% 0 5% 0;
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	font-size: 2.5rem;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	color: beige;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+
+}
+
+button:active {
+	color: #5295a8;
+}
+
+
+
+#play-pause {
+	
+	margin: 0 5%;
+	font-size: 5rem;
+	
+}
+
+li {
+	
+	list-style: none;
+	padding: 10px;
+	padding-top: 20px;
+	font-size: 1.3rem;
+	height: 70px;
+	overflow-x: auto;
+	border-bottom: 2px solid #858585;
+	cursor: pointer;
+	letter-spacing: 2px;
+	color: #d7d2d2;
+	
+}
+
+
+
+li:hover, li:active {
+	background: #6A6A6A33;
+
+}
+
+
+
+
+
+
