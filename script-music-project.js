@@ -6,7 +6,6 @@ var listItem = document.getElementsByTagName("li");
 
 /*var minutes = (audioTag.duration / 60);.... I need to learn more about the duration  property*/
 
-
 function playFunc() {
 
 audioTag.play();   //start playing whatever value is in the audio's src attribute.
